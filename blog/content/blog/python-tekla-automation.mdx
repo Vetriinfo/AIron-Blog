@@ -1,0 +1,53 @@
+---
+title: "Python and Tekla Structures—Where They Meet"
+description: "Using Python to drive Tekla via the Open API: model queries, batch updates, and export pipelines."
+date: "2025-02-10"
+category: "Steel Design & Tekla"
+tags: ["python", "tekla", "automation"]
+published: true
+---
+
+Tekla Structures exposes a .NET API that you can drive from C# or, with a little setup, from **Python** via pythonnet. Here's a practical overview.
+
+## Why Python?
+
+Many engineers already use Python for data, calcs, and scripts. Using it with Tekla lets you:
+
+- Reuse pandas, numpy, and your existing tooling
+- Run checks and exports in CI or on a server
+- Build one-off scripts without spinning up Visual Studio
+
+The tradeoff is a bit of setup (pythonnet, Tekla's .NET runtime) and sometimes slower iteration than C# in Visual Studio.
+
+## Getting Started
+
+1. **Install Tekla** and ensure the Tekla Open API assemblies are available.
+2. **Install pythonnet** (`pip install pythonnet`).
+3. **Reference the Tekla assemblies** and connect to the running Tekla process or open a model.
+
+A minimal "hello world" might look like:
+
+```python
+import clr
+clr.AddReference("Tekla.Structures.Model")
+from Tekla.Structures.Model import Model
+
+model = Model()
+if model.GetConnectionStatus():
+    print("Connected to Tekla.")
+else:
+    print("Open a model in Tekla first.")
+```
+
+From here you can enumerate model objects, read properties, and create or modify elements.
+
+## Typical Use Cases
+
+- **Model enumeration**: Loop over beams, columns, or connections and extract IDs, profiles, and positions.
+- **Batch property updates**: Change phase, name, or user-defined attributes in bulk.
+- **Export to CSV/JSON**: Push model data into pandas for analysis or reporting.
+- **Drawing lists**: Query drawing objects and export titles and status.
+
+## Next
+
+We'll look at **C# vs Python** for Tekla in a follow-up, and then **connection design checks** driven from the model.

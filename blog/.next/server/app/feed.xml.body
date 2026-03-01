@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technical Creator Blog</title>
+    <link>https://yourdomain.com</link>
+    <description>Technical blog on structural engineering, steel design &amp; Tekla, Python &amp; C# automation, AI agents &amp; RAG, stock market compounding, and quantum tech.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Mar 2026 07:38:34 GMT</lastBuildDate>
+    <atom:link href="https://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Structural Engineering Basics for Software Engineers</title>
+      <link>https://yourdomain.com/blog/structural-engineering-basics</link>
+      <description>A bridge between structural engineering concepts and automation—loads, codes, and why they matter for tooling.</description>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://yourdomain.com/blog/structural-engineering-basics</guid>
+    </item>
+    <item>
+      <title>Python and Tekla Structures—Where They Meet</title>
+      <link>https://yourdomain.com/blog/python-tekla-automation</link>
+      <description>Using Python to drive Tekla via the Open API: model queries, batch updates, and export pipelines.</description>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://yourdomain.com/blog/python-tekla-automation</guid>
+    </item>
+    <item>
+      <title>RAG for Design Codes and Standards</title>
+      <link>https://yourdomain.com/blog/rag-for-design-codes</link>
+      <description>Using retrieval-augmented generation to query building codes and standards—setup, chunking, and safety.</description>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://yourdomain.com/blog/rag-for-design-codes</guid>
+    </item>
+  </channel>
+</rss>

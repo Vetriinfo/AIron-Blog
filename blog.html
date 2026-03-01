@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+  <title>Blog | Tech & AI Blog</title>
+  <meta name="description" content="All posts on AI, Automation, Python, Structural Engineering, and Trading.">
+  <link rel="canonical" href="https://yoursite.com/blog.html">
+  <meta property="og:title" content="Blog | Tech & AI Blog">
+  <meta property="og:description" content="All posts on AI, Automation, Python, Structural Engineering, and Trading.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yoursite.com/blog.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Blog | Tech & AI Blog">
+  <meta name="twitter:description" content="All posts on AI, Automation, Python, Structural Engineering, and Trading.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Blog","name":"Tech & AI Blog","url":"https://yoursite.com/blog.html","description":"All posts on AI, Automation, Python, Structural Engineering, and Trading."}
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="navbar" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Tech & AI Blog home">Tech & AI Blog</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html" aria-current="page">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button type="button" class="theme-toggle" aria-label="Toggle dark mode" id="theme-toggle"></button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="main" role="main">
+    <div class="container">
+      <h1>Blog</h1>
+      <div class="search-filter-bar">
+        <div class="search-wrap">
+          <label for="search-input" class="label" style="display: none;">Search posts</label>
+          <input type="search" id="search-input" class="input" placeholder="Search posts…" aria-label="Search posts" autocomplete="off">
+        </div>
+        <div class="filter-wrap">
+          <label for="category-filter">Category</label>
+          <select id="category-filter" aria-label="Filter by category">
+            <option value="">All</option>
+            <option value="AI">AI</option>
+            <option value="Automation">Automation</option>
+            <option value="Python">Python</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Trading">Trading</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="blog-list" class="blog-grid">
+        <div class="blog-card skeleton-card" aria-hidden="true">
+          <div class="blog-card-image-wrap skeleton skeleton-image"></div>
+          <div class="blog-card-body">
+            <span class="skeleton skeleton-text" style="width: 30%;"></span>
+            <h3 class="skeleton skeleton-title"></h3>
+            <p class="skeleton skeleton-text"></p>
+          </div>
+        </div>
+        <div class="blog-card skeleton-card" aria-hidden="true">
+          <div class="blog-card-image-wrap skeleton skeleton-image"></div>
+          <div class="blog-card-body">
+            <span class="skeleton skeleton-text" style="width: 30%;"></span>
+            <h3 class="skeleton skeleton-title"></h3>
+            <p class="skeleton skeleton-text"></p>
+          </div>
+        </div>
+        <div class="blog-card skeleton-card" aria-hidden="true">
+          <div class="blog-card-image-wrap skeleton skeleton-image"></div>
+          <div class="blog-card-body">
+            <span class="skeleton skeleton-text" style="width: 30%;"></span>
+            <h3 class="skeleton skeleton-title"></h3>
+            <p class="skeleton skeleton-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="no-results" class="no-results hidden">
+        <h2>No posts found</h2>
+        <p>Try a different search or category.</p>
+      </div>
+
+      <div id="blog-error" class="no-results hidden">
+        <h2>Could not load posts</h2>
+        <p>Please refresh the page or try again later.</p>
+      </div>
+
+      <nav id="pagination-wrap" class="pagination hidden" aria-label="Pagination"></nav>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div>
+        <h4>Tech & AI Blog</h4>
+        <p>AI, Automation, Python, Structural Engineering, Trading.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul class="footer-links">
+          <li><a href="404.html">Privacy</a></li>
+          <li><a href="404.html">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2025 Tech & AI Blog. All rights reserved.</p>
+  </footer>
+
+  <button type="button" class="scroll-top" aria-label="Scroll to top" id="scroll-top"></button>
+
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/scroll-top.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

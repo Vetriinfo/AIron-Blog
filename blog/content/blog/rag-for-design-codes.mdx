@@ -1,0 +1,38 @@
+---
+title: "RAG for Design Codes and Standards"
+description: "Using retrieval-augmented generation to query building codes and standards—setup, chunking, and safety."
+date: "2025-02-01"
+category: "AI Agents & RAG"
+tags: ["rag", "ai", "codes", "agents"]
+published: true
+---
+
+Design codes (AISC, ACI, ASCE, Eurocodes) are long, dense, and full of cross-references. **RAG** (retrieval-augmented generation) can turn them into queryable knowledge bases for lookups and summaries—without replacing the need to read the actual document.
+
+## What RAG Does Here
+
+1. **Ingest**: Chunk the code PDF or text (by section, clause, or fixed size).
+2. **Embed**: Store chunks in a vector store with embeddings.
+3. **Retrieve**: For a user question, find the most relevant chunks.
+4. **Generate**: Send those chunks plus the question to an LLM to produce an answer grounded in the text.
+
+The result: "What does AISC 360 say about block shear?" returns a short answer with the right section and key wording, instead of you scrolling the PDF.
+
+## Chunking Strategy
+
+Codes have hierarchy (chapter → section → clause). Prefer **semantic chunking** that respects that structure so retrieval returns whole clauses or sub-clauses. Avoid splitting mid-sentence or mid-table.
+
+## Safety and Liability
+
+- **Never** present RAG output as a substitute for reading the code. Always cite section numbers and encourage the user to verify.
+- Use **guardrails**: e.g., "This is for reference only; confirm with the current printed code."
+- Prefer **conservative** model behavior (stick to the retrieved text, avoid extrapolation).
+
+## Stack Sketch
+
+- **Documents**: PDFs of the code (with permission / licensing in mind).
+- **Embeddings**: OpenAI, Cohere, or open-source (e.g., sentence-transformers).
+- **Vector store**: Pinecone, Weaviate, or local (Chroma, LanceDB).
+- **Orchestration**: LangChain, LlamaIndex, or custom pipelines.
+
+A later post will walk through a minimal **RAG pipeline** for one code (e.g., AISC 360 Chapter D) and how to expose it as a simple API or chat UI.

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+  <title>Contact | Tech & AI Blog</title>
+  <meta name="description" content="Contact Tech & AI Blog. Send a message or suggestion.">
+  <link rel="canonical" href="https://yoursite.com/contact.html">
+  <meta property="og:title" content="Contact | Tech & AI Blog">
+  <meta property="og:description" content="Contact Tech & AI Blog. Send a message or suggestion.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yoursite.com/contact.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="navbar" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Tech & AI Blog home">Tech & AI Blog</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><button type="button" class="theme-toggle" aria-label="Toggle dark mode" id="theme-toggle"></button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="main" role="main">
+    <div class="container">
+      <h1>Contact</h1>
+      <p style="color: var(--color-text-muted); margin-bottom: 1.5rem;">Send a message. This is a front-end-only form; no data is sent to a server.</p>
+      <form id="contact-form" class="two-col" style="max-width: 36rem;" novalidate>
+        <div class="form-group">
+          <label for="contact-name" class="label">Name <span style="color: var(--color-text-muted);">(required)</span></label>
+          <input type="text" id="contact-name" class="input" name="name" required minlength="2" maxlength="100" placeholder="Your name" autocomplete="name">
+          <span class="error-message" id="error-name" aria-live="polite"></span>
+        </div>
+        <div class="form-group">
+          <label for="contact-email" class="label">Email <span style="color: var(--color-text-muted);">(required)</span></label>
+          <input type="email" id="contact-email" class="input" name="email" required placeholder="you@example.com" autocomplete="email">
+          <span class="error-message" id="error-email" aria-live="polite"></span>
+        </div>
+        <div class="form-group" style="grid-column: 1 / -1;">
+          <label for="contact-message" class="label">Message <span style="color: var(--color-text-muted);">(required)</span></label>
+          <textarea id="contact-message" class="textarea" name="message" required minlength="10" maxlength="2000" placeholder="Your message"></textarea>
+          <span class="error-message" id="error-message" aria-live="polite"></span>
+        </div>
+        <div class="form-group" style="grid-column: 1 / -1;">
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </div>
+      </form>
+      <p id="form-success" class="hidden form-success-msg">Thank you. Your message has been received (demo: no server).</p>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div>
+        <h4>Tech & AI Blog</h4>
+        <p>AI, Automation, Python, Structural Engineering, Trading.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul class="footer-links">
+          <li><a href="404.html">Privacy</a></li>
+          <li><a href="404.html">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2025 Tech & AI Blog. All rights reserved.</p>
+  </footer>
+
+  <button type="button" class="scroll-top" aria-label="Scroll to top" id="scroll-top"></button>
+
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/scroll-top.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

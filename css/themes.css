@@ -1,0 +1,39 @@
+/* ============================================
+   THEMES - Dark / Light mode variables
+   ============================================ */
+
+:root {
+  /* Light theme (default) */
+  --color-bg: #f8f9fa;
+  --color-bg-elevated: #ffffff;
+  --color-text: #1a1a2e;
+  --color-text-muted: #5c5c6d;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-border: #e5e7eb;
+  --color-card-shadow: rgba(0, 0, 0, 0.06);
+  --color-card-shadow-hover: rgba(0, 0, 0, 0.12);
+  --color-skeleton: #e5e7eb;
+  --color-skeleton-shine: #f3f4f6;
+}
+
+[data-theme="dark"] {
+  --color-bg: #0f172a;
+  --color-bg-elevated: #1e293b;
+  --color-text: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --color-accent: #60a5fa;
+  --color-accent-hover: #93c5fd;
+  --color-border: #334155;
+  --color-card-shadow: rgba(0, 0, 0, 0.3);
+  --color-card-shadow-hover: rgba(0, 0, 0, 0.5);
+  --color-skeleton: #334155;
+  --color-skeleton-shine: #475569;
+}
+
+/* Smooth transition when theme changes */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}

@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "siteName": "Tech & AI Blog",
+    "description": "AI, Automation, Python, Structural Engineering, Trading insights for tech learners.",
+    "categories": ["AI", "Automation", "Python", "Engineering", "Trading"]
+  },
+  "posts": [
+    {
+      "id": "python-automation-basics",
+      "title": "Python Automation: Getting Started in 2025",
+      "excerpt": "Learn the fundamentals of automating repetitive tasks with Python. From file handling to scheduling scripts.",
+      "content": "Automation saves time and reduces errors. In this post we cover setting up your environment, using the os and pathlib modules, and scheduling tasks with cron or Task Scheduler.\n\nKey topics include file batch processing, reading and writing CSV/JSON, and calling external APIs from Python scripts. Future automation integration: content can be generated or updated via Python scripts that write to this JSON file.",
+      "category": "Automation",
+      "author": "Tech Blog Team",
+      "date": "2025-02-28",
+      "readTime": "8 min",
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
+      "imageAlt": "Python code on screen",
+      "featured": true
+    },
+    {
+      "id": "ai-ml-introduction",
+      "title": "Introduction to AI and Machine Learning for Beginners",
+      "excerpt": "A gentle introduction to AI concepts, machine learning types, and how to start your first ML project.",
+      "content": "Artificial Intelligence and Machine Learning are transforming industries. We introduce supervised vs unsupervised learning, key algorithms, and how to run your first model with scikit-learn or TensorFlow.\n\nUnderstanding bias, data quality, and ethics is essential before deploying ML in production.",
+      "category": "AI",
+      "author": "Tech Blog Team",
+      "date": "2025-02-25",
+      "readTime": "12 min",
+      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+      "imageAlt": "AI and neural network visualization",
+      "featured": true
+    },
+    {
+      "id": "structural-engineering-software",
+      "title": "Essential Software for Structural Engineers",
+      "excerpt": "Overview of CAD, FEA, and BIM tools that every structural engineer should know.",
+      "content": "From AutoCAD and Revit to SAP2000 and ETABS, we survey the software landscape for structural design and analysis. BIM integration and interoperability between tools are also discussed.\n\nAutomation note: Python scripts can drive API-based tools for batch analysis or report generation.",
+      "category": "Engineering",
+      "author": "Tech Blog Team",
+      "date": "2025-02-22",
+      "readTime": "6 min",
+      "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+      "imageAlt": "Structural engineering blueprint",
+      "featured": false
+    },
+    {
+      "id": "algorithmic-trading-python",
+      "title": "Algorithmic Trading with Python: First Steps",
+      "excerpt": "Build your first backtesting pipeline and understand risk management in algorithmic trading.",
+      "content": "Algorithmic trading requires discipline and robust backtesting. We walk through data sources, building a simple strategy, backtesting with pandas, and risk metrics like Sharpe ratio and max drawdown.\n\nNever trade with money you cannot afford to lose. This is educational content only.",
+      "category": "Trading",
+      "author": "Tech Blog Team",
+      "date": "2025-02-20",
+      "readTime": "10 min",
+      "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
+      "imageAlt": "Trading charts and data",
+      "featured": true
+    },
+    {
+      "id": "web-scraping-ethics",
+      "title": "Web Scraping with Python: Ethics and Best Practices",
+      "excerpt": "How to scrape responsibly: robots.txt, rate limiting, and legal considerations.",
+      "content": "Respect robots.txt and terms of service. Use rate limiting and identify your bot. We cover requests, BeautifulSoup, and Scrapy basics, plus legal and ethical guidelines.\n\nAutomation integration: scraped data can feed into this blog's JSON for auto-generated roundup posts.",
+      "category": "Python",
+      "author": "Tech Blog Team",
+      "date": "2025-02-18",
+      "readTime": "7 min",
+      "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&q=80",
+      "imageAlt": "Code and web browser",
+      "featured": false
+    },
+    {
+      "id": "llm-integration-guide",
+      "title": "Integrating LLMs into Your Applications",
+      "excerpt": "Practical guide to using OpenAI, Claude, or open-source LLMs via APIs in your projects.",
+      "content": "Large Language Models can power chatbots, summarization, and code assistance. We compare API usage for OpenAI, Anthropic, and open-source options like Ollama. Security: never send sensitive data to third-party APIs without encryption and compliance checks.\n\nAI content auto-generation: LLMs can draft posts; always human-review before publishing to this JSON.",
+      "category": "AI",
+      "author": "Tech Blog Team",
+      "date": "2025-02-15",
+      "readTime": "11 min",
+      "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&q=80",
+      "imageAlt": "AI chatbot interface",
+      "featured": false
+    }
+  ]
+}

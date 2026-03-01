@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light theme */
+  --surface: 0 0% 99%;
+  --surface-muted: 0 0% 96%;
+  --surface-elevated: 0 0% 100%;
+  --ink: 220 15% 12%;
+  --ink-muted: 220 10% 40%;
+  --ink-inverse: 0 0% 100%;
+  --border: 220 13% 91%;
+  --border-strong: 220 13% 78%;
+  --brand: 199 89% 48%;
+}
+
+.dark {
+  --surface: 220 18% 8%;
+  --surface-muted: 220 16% 12%;
+  --surface-elevated: 220 16% 14%;
+  --ink: 210 20% 98%;
+  --ink-muted: 220 10% 65%;
+  --ink-inverse: 220 18% 8%;
+  --border: 220 13% 20%;
+  --border-strong: 220 13% 32%;
+  --brand: 199 89% 48%;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-surface text-ink antialiased;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-500;
+  }
+}
+
+@layer components {
+  .prose pre {
+    @apply rounded-lg border border-border bg-surface-elevated;
+  }
+  .prose code:not(pre code) {
+    @apply rounded bg-surface-muted px-1.5 py-0.5 text-sm font-mono;
+  }
+}
+
+html {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}

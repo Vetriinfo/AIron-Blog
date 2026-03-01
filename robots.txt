@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yoursite.com/sitemap.xml
+
+Disallow: /404.html

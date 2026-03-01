@@ -1,0 +1,38 @@
+---
+title: "Structural Engineering Basics for Software Engineers"
+description: "A bridge between structural engineering concepts and automation—loads, codes, and why they matter for tooling."
+date: "2025-02-15"
+category: "Structural Engineering"
+tags: ["structural", "basics", "codes"]
+published: true
+---
+
+Structural engineering sits at the intersection of applied physics, material science, and building codes. If you're coming from software and automation, here's a concise map of the territory.
+
+## Why It Matters for Automation
+
+Automation in structural design isn't just "scripting CAD." It's about encoding **rules** (codes), **constraints** (loads, capacities), and **workflows** (from model to drawing to calc). Understanding the domain makes your tools safer and more useful.
+
+## Key Concepts
+
+### Loads and Load Paths
+
+Buildings resist gravity, wind, and seismic loads. Loads flow from slabs to beams to columns to foundations. Your automation often needs to:
+
+- Read or assign load data from 3D models
+- Combine load cases (e.g., dead + live, or load combinations per code)
+- Export loads for handoffs to other disciplines
+
+Getting the load path right is the first step to correct design.
+
+### Codes and Standards
+
+Design is code-driven. In the US, common references include AISC (steel), ACI (concrete), and ASCE 7 (loads). Automation that references code sections (e.g., "AISC 360-16 Chapter D") helps with traceability and audits.
+
+## Next Steps
+
+- Dive into **steel connection design** if you're in Tekla or similar.
+- Use **Python or C#** to script checks and reports.
+- Consider **RAG over code PDFs** for quick lookups.
+
+This post is a starting point; later posts will go deeper into steel design, Tekla, and automation patterns.
