@@ -1,0 +1,18 @@
+# Dependencies - never commit node_modules (includes large binaries)
+node_modules/
+
+# Build
+.next/
+out/
+build/
+dist/
+
+# Env
+.env
+.env.local
+.env*.local
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
